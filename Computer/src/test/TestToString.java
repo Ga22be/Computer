@@ -18,8 +18,7 @@ public class TestToString {
 //		c = new Copy(new LongWord(5), address);
 //		c = new Print(address);
 //		c = new Add(new LongWord(2), new LongWord(3), address);
-//		c = new Mul(new LongWord(2), new LongWord(3), address);
-		
+		c = new Mul(new LongWord(2), new LongWord(3), address);
 		
 		System.out.println(c.toString());
 	}
