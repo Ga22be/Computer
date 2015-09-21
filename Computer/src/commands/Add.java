@@ -13,6 +13,7 @@ public class Add extends BinCommand{
 	@Override
 	protected void op(Memory memory) {
 		memory.write(v1.getValue(memory).add(v2.getValue(memory)), address.getIndex());
+		System.out.println("ADD " + memory.read(address.getIndex()) + " -> " + String.valueOf(address.getIndex()));
 	}
 
 	@Override

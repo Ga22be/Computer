@@ -1,7 +1,5 @@
 package computer;
 
-import javax.imageio.stream.MemoryCacheImageInputStream;
-
 import commands.Command;
 
 public class Computer {
@@ -17,6 +15,10 @@ public class Computer {
 	}
 	
 	public void run(){
-		
+		ProgramCounter counter = new ProgramCounter();
+		while(counter.possitive()){
+			commands[counter.getIndex()].execute(memory, counter);
+//			System.out.println(counter.getIndex());
+		}	
 	}
 }

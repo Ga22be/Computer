@@ -14,5 +14,15 @@ public class ProgramCounter {
 	public void setIndex(int index){
 		 this.index = index;
 	}
+	
+	public void increment(){
+		index++;
+	}
+	
+	public boolean possitive(){
+		if(index >= 0)
+			return true;
+		return false;
+	}
 
 }

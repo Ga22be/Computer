@@ -3,6 +3,8 @@ package test;
 import commands.Add;
 import commands.Command;
 import commands.Copy;
+import commands.Jump;
+import commands.JumpEq;
 import commands.Mul;
 import commands.Print;
 import computer.Address;
@@ -18,7 +20,9 @@ public class TestToString {
 //		c = new Copy(new LongWord(5), address);
 //		c = new Print(address);
 //		c = new Add(new LongWord(2), new LongWord(3), address);
-		c = new Mul(new LongWord(2), new LongWord(3), address);
+//		c = new Mul(new LongWord(2), new LongWord(3), address);
+//		c = new Jump(2);
+		c = new JumpEq(6, w, address);
 		
 		System.out.println(c.toString());
 	}

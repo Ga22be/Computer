@@ -17,9 +17,9 @@ public abstract class BinCommand implements Command{
 	}
 
 	@Override
-	public ProgramCounter execute(Memory memory, ProgramCounter counter) {
+	public void execute(Memory memory, ProgramCounter counter) {
 		op(memory);
-		return counter;
+		counter.increment();
 	}
 	
 	protected abstract void op(Memory memory);

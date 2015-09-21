@@ -4,6 +4,8 @@ public class LongMemory extends Memory{
 	
 	public LongMemory(int length) {
 		super(length);
+		memory.add(new LongWord(0));
+		memory.add(new LongWord(0));
 	}
 	
 	@Override

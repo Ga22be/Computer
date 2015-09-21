@@ -12,9 +12,9 @@ public class Print implements Command {
 	}
 
 	@Override
-	public ProgramCounter execute(Memory memory, ProgramCounter counter) {
-		// TODO Auto-generated method stub
-		return null;
+	public void execute(Memory memory, ProgramCounter counter) {
+		System.out.println(v.getValue(memory));
+		counter.increment();
 	}
 	
 	@Override

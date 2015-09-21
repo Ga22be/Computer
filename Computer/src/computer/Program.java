@@ -17,9 +17,9 @@ public abstract class Program {
 		StringBuilder sb = new StringBuilder();
 		int index = 0;
 		for(Command c : commands){
-			sb.append(String.valueOf(index++));
+			sb.append(String.valueOf(index++) + " ");
 			sb.append(c.toString());
-			sb.append("/n");
+			sb.append("\n");
 		}
 		return sb.toString();
 	}

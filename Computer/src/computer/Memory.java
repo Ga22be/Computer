@@ -10,6 +10,7 @@ public abstract class Memory {
 	}
 	
 	public Word read(int index){
+		System.out.println("[" + memory.get(0).toString() + "],  [" + memory.get(1).toString() + "]");
 		return memory.get(index);
 	}
 	

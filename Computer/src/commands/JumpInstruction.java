@@ -11,16 +11,13 @@ public abstract class JumpInstruction implements Command {
 	}
 	
 	@Override
-	public ProgramCounter execute(Memory memory, ProgramCounter counter) {
-		// TODO Auto-generated method stub
-		return null;
+	public void execute(Memory memory, ProgramCounter counter) {
+		op(memory, counter);
 	}
 	
-	protected abstract void op();
+	protected abstract void op(Memory memory, ProgramCounter counter);
 	
 	@Override
-	public String toString(){
-		return null;
-	}
+	public abstract String toString();
 
 }
