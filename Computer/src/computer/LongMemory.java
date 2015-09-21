@@ -10,7 +10,7 @@ public class LongMemory extends Memory{
 	
 	@Override
 	public void write(Word w, int index) {
-		memory.add(index, (LongWord) w);
+		memory.set(index, (LongWord) w);
 	}
 
 }

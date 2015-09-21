@@ -13,7 +13,6 @@ public class Mul extends BinCommand {
 	@Override
 	protected void op(Memory memory) {
 		memory.write(v1.getValue(memory).mul(v2.getValue(memory)), address.getIndex());
-		System.out.println("MUL " + memory.read(address.getIndex()) + " -> " + String.valueOf(address.getIndex()));
 	}
 
 	@Override
