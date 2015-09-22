@@ -1,7 +1,5 @@
 package computer;
 
-import java.util.ArrayList;
-
 public abstract class Memory {
 	protected Word[] memory;
 	

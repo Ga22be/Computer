@@ -17,11 +17,11 @@ public class TestToString {
 		LongWord w = new LongWord(5);
 		Command c;
 		
-//		c = new Copy(new LongWord(5), address);
-//		c = new Print(address);
-//		c = new Add(new LongWord(2), new LongWord(3), address);
-//		c = new Mul(new LongWord(2), new LongWord(3), address);
-//		c = new Jump(2);
+		c = new Copy(new LongWord(5), address);
+		c = new Print(address);
+		c = new Add(new LongWord(2), new LongWord(3), address);
+		c = new Mul(new LongWord(2), new LongWord(3), address);
+		c = new Jump(2);
 		c = new JumpEq(6, w, address);
 		
 		System.out.println(c.toString());
