@@ -6,11 +6,9 @@ import commands.Command;
 
 public abstract class Program {
 	protected ArrayList<Command> commands;
-	private ProgramCounter counter;
 	
 	protected Program(){
 		commands = new ArrayList<Command>();
-		counter = new ProgramCounter();
 	}
 	
 	public String toString(){

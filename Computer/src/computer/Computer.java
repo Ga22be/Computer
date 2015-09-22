@@ -16,9 +16,8 @@ public class Computer {
 	
 	public void run(){
 		ProgramCounter counter = new ProgramCounter();
-		while(counter.possitive()){
+		while(counter.isPositive()){
 			commands[counter.getIndex()].execute(memory, counter);
-//			System.out.println(counter.getIndex());
 		}	
 	}
 }

@@ -23,8 +23,8 @@ public class LongWord extends Word {
 	}
 
 	@Override
-	public Word copy(Word w) {
-		return new LongWord(((LongWord) w).value);
+	public Word copy() {
+		return new LongWord(value);
 	}
 
 	@Override

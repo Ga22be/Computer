@@ -19,7 +19,7 @@ public class ProgramCounter {
 		index++;
 	}
 	
-	public boolean possitive(){
+	public boolean isPositive(){
 		if(index >= 0)
 			return true;
 		return false;
