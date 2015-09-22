@@ -16,7 +16,7 @@ public class Copy implements Command {
 	
 	@Override
 	public void execute(Memory memory, ProgramCounter counter) {
-		memory.write(v.getValue(memory), address.getIndex());
+		memory.write(v.getValue(memory).copy(), address.getIndex());
 		counter.increment();
 	}
 	

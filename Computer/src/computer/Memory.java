@@ -3,14 +3,14 @@ package computer;
 import java.util.ArrayList;
 
 public abstract class Memory {
-	protected ArrayList<Word> memory;
+	protected Word[] memory;
 	
 	protected Memory(int length){
-		memory = new ArrayList<Word>(length);
+		memory = new Word[length];
 	}
 	
 	public Word read(int index){
-		return memory.get(index);
+		return memory[index];
 	}
 	
 	public abstract void write(Word w, int index);
