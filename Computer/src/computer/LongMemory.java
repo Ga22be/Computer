@@ -8,8 +8,7 @@ public class LongMemory extends Memory{
 	
 	@Override
 	public void write(Word w, int index) {
-		memory[index] = w;
-
+		memory[index] = (LongWord) w;
 	}
 
 }
